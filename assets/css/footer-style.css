@@ -1,0 +1,119 @@
+:root {
+  --dark-color: #141414;
+  --grey-color: #A9B2BE;
+  --dark-grey-color: #404C5C;
+  --white-color: #EEF3F8;
+  --green-color: #58B000;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*------------ Footer style --------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+.footer {
+  margin: 30px 0;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: var(--green-color);
+}
+
+.footer__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 70px;
+  border-radius: 20px;
+  background: var(--dark-color);
+}
+
+.logo__link {
+  display: block;
+  max-width: 90px;
+}
+
+.footer-categories h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  text-align: left;
+  color: var(--green-color);
+}
+
+.footer-categories ul {
+  margin-top: 18px;
+}
+
+.footer-categories ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.footer-categories ul li a:hover {
+  color: var(--green-color);
+}
+
+.footer-contacts h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.09px;
+  text-align: left;
+  color: var(--green-color);
+}
+
+.footer-contacts ul {
+  margin-top: 18px;
+}
+
+.footer-contacts ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.footer-contacts ul li a img {
+  width: 26px;
+  height: 26px;
+}
+
+.footer-contacts ul li:last-child a {
+  margin-right: 10px;
+}
+
+.scrollToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: transparent;
+}
+
+/*=========================================================================================*/
+/*---------------------------- Media queries ----------------------------------------------*/
+/*=========================================================================================*/
+@media screen and (max-width: 768.98px) {
+  .footer__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 440.98px) {
+  .footer__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer-widget {
+    padding: 0 10px;
+  }
+} /*# sourceMappingURL=footer-style.css.map */
