@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="assets/css/header-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
     <link rel="stylesheet" href="assets/css/popups.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
-
 
 </head>
 <body>
@@ -45,12 +43,12 @@
                                         <li class="menu__sub-link"><a href="">Категоия 4/4</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu__link"><a href="about.html">Тарифи</a></li> 
-                                <li class="menu__link"><a href="about.html">Послуги</a></li> 
-                                <li class="menu__link"><a href="about.html">Статі</a></li> 
+                                <li class="menu__link"><a href="">Тарифи</a></li> 
+                                <li class="menu__link"><a href="">Послуги</a></li> 
+                                <li class="menu__link"><a href="">Статі</a></li> 
                                 <li class="menu__link"><a id="#popup2" href="#popup2" class="popup-link" href="#">Зв’язок</a></li>
                             </ul>
-                      
+
                             <div class="header__button">
                                 <a id="#popup" href="#popup" class="popup-link searsh_popup">Поиск 
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -199,29 +197,39 @@
     <div id="popup2" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <a href="#" class="popup__close close-popup"><img src="assets/img/close.svg" alt="icon"></a>
-                <h4 class="feedback__title">Звортній зв’язок</h4>
-                <form action="" class="form__feedback">
+                <div class="feedback-container">
+                    <h4 class="feedback__title">Зворотній зв’язок</h4>
+                    <a href="#" class="popup__close close-popup feedback_close"><img src="assets/img/close.svg" alt="icon"></a>
+                    <form action="" class="form__feedback">
 
-                    <div class="input__feedback">
-                        <input type="text" placeholder="Ім'я:" />
-                        <input type="tel" placeholder="Телефон:" />
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div class="bottom__action">
-                        <div class="policy__check">
-                            <input type="checkbox" id="policy" class="policy" name="interest" value="Політика конфіденційності" required>
-                            <label for="policy" class="policy__label"><a href="#" target="_blank">Політика конфіденційності</a></label>
+                        <div class="input__feedback">
+                            <input type="text" placeholder="Ім'я:" />
+                            <input type="tel" placeholder="Телефон:" />
+                            <input type="email" placeholder="Email" />
                         </div>
-                        <button type="submit" class="contact__btn">Відправити</button>
-                    </div>
+                        <div class="bottom__action">
+                            <div class="policy__check">
+                                <input type="checkbox" id="policy" class="policy" name="interest" value="Політика конфіденційності" required>
+                                <label for="policy" class="policy__label"><a href="#" target="_blank">Політика конфіденційності</a></label>
+                            </div>
+                            <button type="submit" class="contact__btn">Відправити</button>
+                        </div>
 
-                </form>
+                    </form>
+                    <div class="social__wrapp">
+                        <h4 class="social__title">Або написати в месенджер</h4>
+                        <ul class="list_soc-icon">
+                            <li><a href=""><img src="assets/img/inst-green.svg" alt="icon"></a> <span>Instagram</span></li>
+                            <li><a href=""><img src="assets/img/facebook-green.svg" alt="icon"></a> <span>Facebook</span></li>
+                            <li><a href=""><img src="assets/img/telegram-green.svg" alt="icon"></a> <span>Telegram</span></li>
+                            <li><a href=""><img src="assets/img/viber-green.svg" alt="icon"></a> <span>Viber</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-   
-   
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
