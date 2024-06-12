@@ -80,4 +80,105 @@ body.lock {
 /*--------------------------------------*/
 .page {
   flex: 1 1 auto;
+}
+
+/*------------- Hero section -----------------------*/
+.section__hero {
+  margin-top: 80px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 200px 60px 100px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.swiper-slide .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.swiper-slide .title span {
+  line-height: 120%;
+}
+.swiper-slide .title a img {
+  width: 30px;
+}
+
+.swiper-slide .text {
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 590px;
+  line-height: 1.3;
+}
+
+.swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1 !important;
+  height: 6px !important;
+  margin-bottom: 30px;
+}
+
+.swiper-scrollbar-drag {
+  height: 6px;
+  background: #46A80F;
+  width: 100px !important;
+}
+
+.swiper-scrollbar-horizontal {
+  left: calc(50% - 150px) !important;
+  z-index: 50;
+  width: 300px !important;
+}
+
+@media screen and (max-width: 767.98px) {
+  .swiper-slide .title span {
+    font-size: 28px;
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 540.98px) {
+  .swiper-slide {
+    padding: 200px 20px 60px;
+  }
+  .swiper-slide .subtitle {
+    font-size: 16px;
+  }
+  .swiper-slide .title {
+    flex-wrap: wrap;
+  }
+  .swiper-slide .title span {
+    font-size: 22px;
+    max-width: 550px;
+  }
+  .swiper-slide .text {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main-style.css.map */
