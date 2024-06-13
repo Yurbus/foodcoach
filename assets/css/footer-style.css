@@ -78,9 +78,18 @@
   text-align: left;
 }
 
-.footer-contacts ul li a img {
-  width: 26px;
-  height: 26px;
+.footer-contacts ul li .icon-font {
+  font-size: 28px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contacts ul li .icon-font:hover {
+  color: var(--green-color);
+  border-color: var(--green-color);
 }
 
 .footer-contacts ul li:last-child a {

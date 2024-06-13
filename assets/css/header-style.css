@@ -247,9 +247,18 @@
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
-.social__list li {
-  width: 26px;
-  height: 26px;
+.social__list li a {
+  font-size: 28px;
+  color: var(--dark-grey-color);
+  border: 1px solid var(--dark-grey-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social__list li a:hover {
+  color: var(--green-color);
+  border-color: var(--green-color);
 }
 
 /*----- Feedback modal ---------------*/

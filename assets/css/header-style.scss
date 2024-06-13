@@ -224,8 +224,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     li {
-        width: 26px;
-        height: 26px;
+      a {
+        font-size: 28px;
+        color: var(--dark-grey-color);
+        border: 1px solid var(--dark-grey-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          color: var(--green-color);
+          border-color: var(--green-color);
+        }
+      }
     }
   }
 /*----- Feedback modal ---------------*/

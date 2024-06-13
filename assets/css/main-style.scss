@@ -78,12 +78,10 @@ body.lock {
 /*--------------------------------------*/
 .page {
 	flex: 1 1 auto;
+	padding-top: 80px;
 }
 
 /*------------- Hero section -----------------------*/
-.section__hero {
-	margin-top: 80px;
-}
 .swiper {
 	width: 100%;
 	height: 100%;
@@ -133,7 +131,6 @@ body.lock {
 	}
 	}
 }
-
 .swiper-slide .text {
 	font-size: 22px;
 	font-weight: 400;
@@ -203,7 +200,7 @@ body.lock {
 	span {
 		margin-left: 4px;
 		font-weight: 500;
-      font-size: 13px;
+        font-size: 13px;
 		color: #a9b2be;
 	}
 }
@@ -230,7 +227,7 @@ body.lock {
 			display: flex;
 			align-items: center;
 			font-weight: 500;
-         font-size: 13px;
+            font-size: 13px;
 			color: #a9b2be;
 			&:hover {
 				color:var(--green-color);
@@ -242,13 +239,28 @@ body.lock {
 			}
 		}
 	}
-	
 	.meta-date {
 		font-weight: 500;
 		font-size: 13px;
 		color: #a9b2be;
 	}
-	
+}
+.read-more__wrap {
+	display: flex;
+	justify-content: center;
+	margin: 30px auto;
+	.btn-read__more {
+		font-weight: 700;	
+		font-size: 15px;
+		border-radius: 40px;
+		padding: 12px 39px;
+		background: #46a80f;
+		color: #fff;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			background: darken(#46a80f, 5%);
+		}
+	}
 }
 
 
