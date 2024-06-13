@@ -114,21 +114,22 @@ body.lock {
 }
 
 .swiper-slide {
-	.title {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 40px;
-	font-weight: 700;
-	margin-bottom: 13px;
-	span {
-		line-height: 120%;
-	}
 	a {
-		img {
-			width: 30px;
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 13px;
+			span {
+				line-height: 120%;
+				color: var(--white-color);
+			}
+			img {
+				width: 30px;
+			}
 		}
-	}
 	}
 }
 .swiper-slide .text {

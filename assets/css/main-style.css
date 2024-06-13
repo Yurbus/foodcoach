@@ -114,7 +114,7 @@ body.lock {
   margin-bottom: 12px;
 }
 
-.swiper-slide .title {
+.swiper-slide a .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,10 +122,11 @@ body.lock {
   font-weight: 700;
   margin-bottom: 13px;
 }
-.swiper-slide .title span {
+.swiper-slide a .title span {
   line-height: 120%;
+  color: var(--white-color);
 }
-.swiper-slide .title a img {
+.swiper-slide a .title img {
   width: 30px;
 }
 
