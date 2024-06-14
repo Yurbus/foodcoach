@@ -258,6 +258,15 @@ body.lock {
 
 
 
+/*------------- Single post style -----------------------*/
+/*-------------------------------------------------------*/
+.hero-section > figure {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    inset: 0;
+    background-color: inherit;
+}
 
 
 

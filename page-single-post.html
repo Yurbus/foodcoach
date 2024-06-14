@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Блог правильного харчування</title>
+
+    <link type="image/png" sizes="96x96" rel="icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/iconsfont.css">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/header-style.css">
+    <link rel="stylesheet" href="assets/css/footer-style.css">
+    <link rel="stylesheet" href="assets/css/popups.css">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!--------- Header ------------>
+        <header class="header" id="stickyMenu">
+            <div class="header__container">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo-link"><img src="assets/img/Logo.svg" alt="Logo"></a>
+                    </div>
+
+                    <div class="header__right">
+                        <div class="header__menu">
+                            <ul class="menu__list">
+                                <li class="menu__link"><a href="#">Головна</a> </li>
+                                <li class="menu__link">
+                                    <a href="">Рецепти</a>
+                                    <ul class="menu__sub-list">
+                                        <li class="menu__sub-link"><a href="">Категоия 1/1</a></li>
+                                        <li class="menu__sub-link"><a href="">Категоия 2/2</a></li>
+                                        <li class="menu__sub-link"><a href="">Категоия 3/3</a></li>
+                                        <li class="menu__sub-link"><a href="">Категоия 4/4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__link"><a href="">Тарифи</a></li> 
+                                <li class="menu__link"><a href="">Послуги</a></li> 
+                                <li class="menu__link"><a href="">Статі</a></li> 
+                                <li class="menu__link"><a id="#popup2" href="#popup2" class="popup-link" href="#">Зв’язок</a></li>
+                            </ul>
+
+                            <div class="header__button">
+                                <a id="#popup" href="#popup" class="popup-link searsh_popup">Поиск 
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.05085 1.36377C5.43529 1.36371 4.82575 1.4849 4.25703 1.72042C3.68831 1.95594 3.17155 2.30119 2.73627 2.73644C2.30098 3.17168 1.95569 3.68841 1.72011 4.25712C1.48453 4.82582 1.36328 5.43536 1.36328 6.05092C1.36322 6.66653 1.48442 7.27612 1.71997 7.84488C1.95552 8.41363 2.3008 8.93042 2.7361 9.36572C3.17139 9.80102 3.68817 10.1463 4.25692 10.3819C4.82567 10.6174 5.43525 10.7386 6.05085 10.7386C7.14476 10.7386 8.14934 10.3511 8.94708 9.72345L9.36506 10.1414C9.27923 10.3082 9.24884 10.498 9.27831 10.6832C9.30777 10.8685 9.39556 11.0394 9.5289 11.1713L11.7234 13.3807C12.064 13.7218 12.6215 13.7218 12.9625 13.3807L13.3805 12.9627C13.5442 12.798 13.636 12.5753 13.636 12.3431C13.636 12.111 13.5442 11.8882 13.3805 11.7236L11.1712 9.52903C11.0384 9.39659 10.8664 9.31054 10.6807 9.28369C10.4951 9.25684 10.3057 9.29061 10.1408 9.37999L9.72285 8.962C10.27 8.27157 10.6114 7.44093 10.7081 6.56532C10.8048 5.68971 10.6528 4.80458 10.2694 4.01141C9.88614 3.21825 9.28706 2.54917 8.54092 2.08088C7.79477 1.61259 6.93177 1.36405 6.05085 1.36377ZM6.05085 2.22935C7.06438 2.22935 8.03639 2.63198 8.75307 3.34867C9.46974 4.06535 9.87236 5.03738 9.87236 6.05092C9.87236 7.06447 9.46974 8.0365 8.75307 8.75318C8.03639 9.46986 7.06438 9.87249 6.05085 9.87249C5.03732 9.87249 4.0653 9.46986 3.34863 8.75318C2.63195 8.0365 2.22933 7.06447 2.22933 6.05092C2.22933 5.03738 2.63195 4.06535 3.34863 3.34867C4.0653 2.63198 5.03732 2.22935 6.05085 2.22935ZM3.63231 4.84187C3.37752 5.25456 3.24317 5.73025 3.24442 6.21525C3.24386 6.55849 3.31104 6.89847 3.44213 7.21569C3.57322 7.53291 3.76563 7.82114 4.00834 8.06384C4.25104 8.30655 4.53926 8.49897 4.85648 8.63006C5.1737 8.76115 5.51367 8.82834 5.8569 8.82777C6.39649 8.82666 6.92273 8.65992 7.36449 8.35007C7.2454 8.36111 7.12582 8.36589 7.00623 8.36441C6.56288 8.36554 6.12368 8.27906 5.71385 8.10993C5.30403 7.94081 4.93166 7.69237 4.61814 7.37889C4.30463 7.06541 4.05614 6.69308 3.88696 6.28327C3.71778 5.87347 3.63123 5.43427 3.63231 4.99092C3.63231 4.94124 3.62992 4.89156 3.63231 4.84187Z" fill="#404C5C"/>
+                                    </svg>    
+                                </a>
+                            </div>
+                            <div class="header__social">
+                                <ul class="social__list">
+                                    <li>
+                                        <a href="" class="icon-inst"></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="icon-inst"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu burger -->
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!--------- Page ------------>
+        <main class="page">
+            <div class="hero-section">
+                <div class="hero__container">
+                    <figure>
+                        <div class="ct-media-container" style="height: calc(100% + 286.142px);">
+                            <img height="800px" src="assets/img/posts/bg_single-post.jpg" class="attachment-full size-full" alt="">
+                        </div>		
+                    </figure>
+                    <header class="entry-header ct-container-narrow">
+                        <h1 class="page-title" title="КАРФАГЕН. Тунис." itemprop="headline">Корисні продукти для правильного харчування</h1>
+                        <ul class="entry-meta" data-type="simple:slash">
+                            <li class="meta-author" >
+                                <a href="" class="media-container-static"><img src="assets/img/posts/avatar.png" width="32" height="32" style="height:32px" alt="Photo"></a>
+                                <a class="meta-author" href="" title="Записи пользователя Claire-gourmand" rel="author"><span>Ірина Писаренко / </span></a>
+                            </li>
+                            <li class="meta-date" ><time class="ct-meta-element-date" datetime="2024-04-30T18:07:43+03:00">29.05.24</time></li>
+                            <li class="meta-categories"><a href="" class="ct-term-4">Места и люди</a></li>
+                        </ul>		
+                    </header>
+                </div>
+            </div>
+
+
+
+
+        </main>
+
+        <!--------- Footer ------------>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__body">
+                    <div class="footer-logo">
+                        <a class="logo__link" href=""><img src="assets/img/logo_white.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer-widget footer-categories">
+                        <h4>Навігація</h4>
+                        <ul>
+                            <li><a href="">Марафони</a></li>
+                            <li><a href="">Програми</a></li>
+                            <li><a href="">Статі</a></li>
+                            <li><a href="">Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-categories">
+                        <h4>Категорії</h4>
+                        <ul>
+                            <li><a href="">Cніданки</a></li>
+                            <li><a href="">Обіди</a></li>
+                            <li><a href="">Вечері</a></li>
+                            <li><a href="">Перекуси</a></li>                 
+                        </ul>
+                    </div>
+                    <div class="footer-widget footer-contacts">
+                        <h4>Контакти</h4>
+                        <ul>
+                            <li><a href="">info.food@gmail.com</a></li>
+                            <li>
+                                <a href="" class="icon-font icon-inst"></a>
+                                <a href="" class="icon-font icon-facebook"></a>
+                                <a href="" class="icon-font icon-telegram"></a>
+                                <a href="" class="icon-font icon-viber"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button class="scrollToTop" id="scrollToTopBtn"><img src="assets/img/scrollTop.svg" alt="icon"></button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><img src="assets/img/close.svg" alt="icon"></a>
+                <form action="" class="form__search">
+                    <div class="input__search">
+                        <input type="text" id="filter" placeholder="Пошук..." />
+                        <div class="search__button">
+                            <button type="submit" class="searsh_popup">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.05085 1.36377C5.43529 1.36371 4.82575 1.4849 4.25703 1.72042C3.68831 1.95594 3.17155 2.30119 2.73627 2.73644C2.30098 3.17168 1.95569 3.68841 1.72011 4.25712C1.48453 4.82582 1.36328 5.43536 1.36328 6.05092C1.36322 6.66653 1.48442 7.27612 1.71997 7.84488C1.95552 8.41363 2.3008 8.93042 2.7361 9.36572C3.17139 9.80102 3.68817 10.1463 4.25692 10.3819C4.82567 10.6174 5.43525 10.7386 6.05085 10.7386C7.14476 10.7386 8.14934 10.3511 8.94708 9.72345L9.36506 10.1414C9.27923 10.3082 9.24884 10.498 9.27831 10.6832C9.30777 10.8685 9.39556 11.0394 9.5289 11.1713L11.7234 13.3807C12.064 13.7218 12.6215 13.7218 12.9625 13.3807L13.3805 12.9627C13.5442 12.798 13.636 12.5753 13.636 12.3431C13.636 12.111 13.5442 11.8882 13.3805 11.7236L11.1712 9.52903C11.0384 9.39659 10.8664 9.31054 10.6807 9.28369C10.4951 9.25684 10.3057 9.29061 10.1408 9.37999L9.72285 8.962C10.27 8.27157 10.6114 7.44093 10.7081 6.56532C10.8048 5.68971 10.6528 4.80458 10.2694 4.01141C9.88614 3.21825 9.28706 2.54917 8.54092 2.08088C7.79477 1.61259 6.93177 1.36405 6.05085 1.36377ZM6.05085 2.22935C7.06438 2.22935 8.03639 2.63198 8.75307 3.34867C9.46974 4.06535 9.87236 5.03738 9.87236 6.05092C9.87236 7.06447 9.46974 8.0365 8.75307 8.75318C8.03639 9.46986 7.06438 9.87249 6.05085 9.87249C5.03732 9.87249 4.0653 9.46986 3.34863 8.75318C2.63195 8.0365 2.22933 7.06447 2.22933 6.05092C2.22933 5.03738 2.63195 4.06535 3.34863 3.34867C4.0653 2.63198 5.03732 2.22935 6.05085 2.22935ZM3.63231 4.84187C3.37752 5.25456 3.24317 5.73025 3.24442 6.21525C3.24386 6.55849 3.31104 6.89847 3.44213 7.21569C3.57322 7.53291 3.76563 7.82114 4.00834 8.06384C4.25104 8.30655 4.53926 8.49897 4.85648 8.63006C5.1737 8.76115 5.51367 8.82834 5.8569 8.82777C6.39649 8.82666 6.92273 8.65992 7.36449 8.35007C7.2454 8.36111 7.12582 8.36589 7.00623 8.36441C6.56288 8.36554 6.12368 8.27906 5.71385 8.10993C5.30403 7.94081 4.93166 7.69237 4.61814 7.37889C4.30463 7.06541 4.05614 6.69308 3.88696 6.28327C3.71778 5.87347 3.63123 5.43427 3.63231 4.99092C3.63231 4.94124 3.62992 4.89156 3.63231 4.84187Z" fill="#404C5C"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item_search-list">
+                        <h4>Популярне:</h4>
+                        <ul class="views-summary">
+                            <li><a href="#">Кулинария</a></li>
+                            <li><a href="#">Путешевствия</a></li>
+                            <li><a href="#">Развитие</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- feedback popup -->
+    <div id="popup2" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="feedback-container">
+                    <h4 class="feedback__title">Зворотній зв’язок</h4>
+                    <a href="#" class="popup__close close-popup feedback_close"><img src="assets/img/close.svg" alt="icon"></a>
+                    <form action="" class="form__feedback">
+
+                        <div class="input__feedback">
+                            <input type="text" placeholder="Ім'я:" />
+                            <input type="tel" placeholder="Телефон:" />
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="bottom__action">
+                            <div class="policy__check">
+                                <input type="checkbox" id="policy" class="policy" name="interest" value="Політика конфіденційності" required>
+                                <label for="policy" class="policy__label"><a href="#" target="_blank">Політика конфіденційності</a></label>
+                            </div>
+                            <button type="submit" class="contact__btn">Відправити</button>
+                        </div>
+
+                    </form>
+                    <div class="social__wrapp">
+                        <h4 class="social__title">Або написати в месенджер</h4>
+                        <ul class="list_soc-icon">
+                            <li><a href=""><img src="assets/img/inst-green.svg" alt="icon"></a> <span>Instagram</span></li>
+                            <li><a href=""><img src="assets/img/facebook-green.svg" alt="icon"></a> <span>Facebook</span></li>
+                            <li><a href=""><img src="assets/img/telegram-green.svg" alt="icon"></a> <span>Telegram</span></li>
+                            <li><a href=""><img src="assets/img/viber-green.svg" alt="icon"></a> <span>Viber</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/popups.js"></script>
+    <script src="assets/js/sw_slider.js"></script>
+
+</body>
+</html>
