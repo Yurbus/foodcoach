@@ -163,7 +163,7 @@ body.lock {
 
 .latest_adds__title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px);
   line-height: 1.2;
 }
 
