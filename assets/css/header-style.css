@@ -17,7 +17,7 @@
   background: #ffffff;
   border-bottom: 1px solid rgba(64, 76, 92, 0.4);
   padding: 10px 0;
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   width: 100%;
 }

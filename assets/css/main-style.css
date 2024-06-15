@@ -275,6 +275,7 @@ body.lock {
 
 .ct-media-container img {
   border-radius: 20px;
+  height: 700px;
 }
 .ct-media-container img::after {
   position: absolute;
@@ -285,7 +286,6 @@ body.lock {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.401);
-  z-index: 4;
 }
 
 .entry-header {
@@ -294,6 +294,7 @@ body.lock {
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 40px;
+  z-index: 4;
 }
 
 .entry_header__wrapp .breadcrumb {
@@ -301,6 +302,7 @@ body.lock {
 }
 .entry_header__wrapp .breadcrumb ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .entry_header__wrapp .breadcrumb ul li a {
   color: #fff;
@@ -313,7 +315,7 @@ body.lock {
 }
 .entry_header__wrapp .page-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: clamp(24px, 4vw, 36px);
   line-height: 110%;
   max-width: 850px;
 }
@@ -351,11 +353,13 @@ body.lock {
 .nutrition-chart {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .circle {
   width: 90px;
   height: 90px;
+  flex: 0 0 auto;
   border-radius: 50%;
   background: conic-gradient(#48A9F8 0% 2.5%, #FF8B3D 2.5% 15%, #33CC99 15% 100%);
   position: relative;
@@ -371,6 +375,7 @@ body.lock {
   width: 70px;
   height: 70px;
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -379,6 +384,7 @@ body.lock {
 .kcal {
   font-size: 14px;
   color: var(--dark-color);
+  width: 50px;
 }
 
 .legend p {
@@ -499,8 +505,8 @@ body.lock {
     right: 0;
     top: 30%;
     z-index: 6;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -526,6 +532,25 @@ body.lock {
   .page-container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  /*--------------------------------------*/
+  .entry-header {
+    margin-top: -240px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nutrition-chart {
+    margin-top: 40px;
+  }
+  .entry_header__wrapp .entry-meta {
+    margin-top: 15px;
+  }
+  .nutrition-chart {
+    margin-top: 15px;
+  }
+  .entry-header {
+    margin-top: -320px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -557,6 +582,22 @@ body.lock {
   }
   .swiper-slide .text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .entry-header {
+    padding: 0px 25px;
+  }
+  .entry_header__wrapp .breadcrumb ul li {
+    font-size: 14px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .legend p {
+    padding: 4px 0;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 414.98px) {
