@@ -123,6 +123,7 @@
                     </div>
                 </div>
             </div>
+            <button class="toggle-button" onclick="toggleSidebar()"><img src="assets/img/filter.svg" alt=""></button>
 
             <!-------- Вывод контента статьи и сайдбар -------->
             <div class="content__container">
@@ -150,9 +151,48 @@
                         <div class="widget widget_recent_entries">
                             <h3 class="widget-title">Останні записи</h3>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <article class="entry_card__sidebar">
+                                        <a href="page-single-post.html" class="boundless-image"><img src="assets/img/posts/post_3.jpg" alt="photo"></a>
+                                        <div class="entry_text__block">
+                                            <h3 class="entry-title"><a href="page-single-post.html">Корисні продукти для правильного харчування</a></h3>
+                                            <ul class="entry-meta">
+                                                <li class="meta-author">
+                                                    <a href="page-single-post.html">Ірина Писаренко</a>
+                                                </li>
+                                                <li class="meta-date"><time class="meta-date">29.05.24</time></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="entry_card__sidebar">
+                                        <a href="page-single-post.html" class="boundless-image"><img src="assets/img/posts/post_2.jpg" alt="photo"></a>
+                                        <div class="entry_text__block">
+                                            <h3 class="entry-title"><a href="page-single-post.html">Корисні продукти </a></h3>
+                                            <ul class="entry-meta">
+                                                <li class="meta-author">
+                                                    <a href="page-single-post.html">Ірина Писаренко</a>
+                                                </li>
+                                                <li class="meta-date"><time class="meta-date">29.05.24</time></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="entry_card__sidebar">
+                                        <a href="page-single-post.html" class="boundless-image"><img src="assets/img/posts/post_1.jpg" alt="photo"></a>
+                                        <div class="entry_text__block">
+                                            <h3 class="entry-title"><a href="page-single-post.html">Корисні продукти для правильного харчування</a></h3>
+                                            <ul class="entry-meta">
+                                                <li class="meta-author">
+                                                    <a href="page-single-post.html">Ірина Писаренко</a>
+                                                </li>
+                                                <li class="meta-date"><time class="meta-date">29.05.24</time></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </li>
                             </ul>
                         </div>
 
@@ -297,6 +337,22 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/popups.js"></script>
     <script src="assets/js/sw_slider.js"></script>
+    <script>
+       function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('show');
+        }
 
+        function handleScroll() {
+            const toggleButton = document.querySelector('.toggle-button');
+            if (window.scrollY > 300) {
+                toggleButton.classList.add('show');
+            } else {
+                toggleButton.classList.remove('show');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </body>
 </html>
