@@ -55,7 +55,6 @@ body {
 body._lock {
 	overflow: hidden;
 }
-
 body.lock {
 	overflow: hidden;
 }
@@ -572,6 +571,9 @@ body.lock {
 	}
 	.sidebar.show {
 		transform: translateX(0);
+	}
+	.no-scroll {
+		overflow: hidden;
 	}
 	.page-container {
 		display: grid;

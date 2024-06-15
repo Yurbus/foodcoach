@@ -529,6 +529,9 @@ body.lock {
   .sidebar.show {
     transform: translateX(0);
   }
+  .no-scroll {
+    overflow: hidden;
+  }
   .page-container {
     display: grid;
     grid-template-columns: 1fr;
