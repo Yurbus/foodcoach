@@ -86,26 +86,96 @@
                             </div>		
                         </figure>
                         <header class="entry-header ct-container-narrow">
-                            <nav aria-label="Breadcrumb" class="breadcrumb">
-                                <ul>
-                                <li><a href="#">Головна / </a></li>
-                                <li><a href="#">Статі / </a></li>
-                                <li><span aria-current="page">Корисні продукти для правильного харчування</span></li>
-                                </ul>
-                            </nav>
-                            <h1 class="page-title" title="" itemprop="headline">Корисні продукти для правильного харчування</h1>
-                            <ul class="entry-meta" data-type="simple:slash">
-                                <li class="meta-author" >
-                                    <a href="" class="media-container-static"><img src="assets/img/posts/avatar.png" width="32" height="32" style="height:32px" alt="Photo"></a>
-                                    <a class="meta-author" href=""><span>Ірина Писаренко / </span></a>
-                                </li>
-                                <li class="meta-date" ><time class="ct-meta-date" datetime="2024-04-30T18:07:43+03:00">29.05.24</time></li>
-                            </ul>		
+                            <div class="entry_header__wrapp">
+                                <nav aria-label="Breadcrumb" class="breadcrumb">
+                                    <ul>
+                                    <li><a href="#">Головна</a></li>&nbsp;/&nbsp;
+                                    <li><a href="#"> Статі</a></li> &nbsp;/&nbsp;
+                                    <li><span aria-current="page"> Корисні продукти для правильного харчування</span></li>
+                                    </ul>
+                                </nav>
+                                <h1 class="page-title" title="" itemprop="headline">Корисні продукти для правильного харчування</h1>
+                                <ul class="entry-meta" data-type="simple:slash">
+                                    <li class="meta-author" >
+                                        <a href="" class="media-container-static"><img src="assets/img/posts/avatar.png" width="32" height="32" style="height:32px" alt="Photo"></a>
+                                        <a class="meta-author" href=""><span>Ірина Писаренко / </span></a>
+                                    </li>
+                                    <li class="meta-date" ><time class="ct-meta-date" datetime="2024-04-30T18:07:43+03:00">29.05.24</time></li>
+                                </ul>	
+                            </div>
+                            <div class="nutrition-chart">
+                                <div class="circle">
+                                    <div class="content">
+                                        <span class="kcal">780 ккал</span>
+                                    </div>
+                                </div>
+                                <div class="legend">
+                                    <p><span class="protein">20 г білки</span></p>
+                                    <p><span class="fats">32 г жири</span></p>
+                                    <p><span class="carbs">50 г вуглеводи</span></p>
+                                </div>
+                            </div>
+                        
+                            <input type="hidden" type="number" id="proteinInput" placeholder="Г білки">
+                            <input type="hidden" type="number" id="fatsInput" placeholder="Г жири">
+                            <input type="hidden" type="number" id="carbsInput" placeholder="Г вуглеводи">
                         </header>
                     </div>
                 </div>
             </div>
 
+            <!-------- Вывод контента статьи и сайдбар -------->
+            <div class="content__container">
+                <div class="page-container">
+                    <article class="post">
+                        <div class="entry-content">
+                            <h4 class="wp-block-heading">Хочемо підкорювати стильних особистостей комфортом глобального 
+                                громадянства.
+                            </h4>
+                            <p>Систематичне поліпшення, розвиток топ-менеджерів, розробка нових підходів і технологій та 
+                                збільшення технічної бази забезпечили підприємству успіх і провідну роль на ринку України. 
+                                На постійній основі підприємство використовує комп'ютерні приємні технології новаторства, бізнесу та накопичення. 
+
+                                Наша мета проста: це надання вам продуктів харчування, неперервної інтеграції та зберігання 
+                                даних. Одна з ведучих міжнародних організацій здійснює діяльність у наступних сферах: інформаційні 
+                                технології, свіжі овочі та фрукти та кредити для малого та середнього бізнесу.
+                            </p>
+                        </div>
+                        <nav class="post-navigation ">
+                        
+                        </nav>
+                    </article>
+
+                    <aside class="sidebar" id="sidebar">
+                        <div class="widget widget_recent_entries">
+                            <h3 class="widget-title">Останні записи</h3>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget widget_categories">
+                            <h3 class="widget-title">Категорії </h3>
+                            <ul>
+                                <li class="cat-item"><a href="">Правильне харчування  <span>(9)</span></a></li>
+                                <li class="cat-item"><a href="">Схуднення  <span>(2)</span></a></li>
+                                <li class="cat-item"><a href="">Випічка  <span>(15)</span></a></li>
+                            </ul>   
+                        </div>
+
+                        <div class="widget widget_tags">
+                            <h3 class="widget-title">Теги </h3>
+                            <ul>
+                                <li class="tag-item"><a href="">Шаурма</a></li>
+                                <li class="tag-item"><a href="">М’ясо</a></li>
+                                <li class="tag-item"><a href="">Салат</a></li>
+                            </ul>   
+                        </div>
+                    </aside>
+                </div>
+            </div>
 
 
 

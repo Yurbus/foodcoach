@@ -66,6 +66,55 @@ window.onscroll = function() {
 };
 
 
+//---------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const kcalElement = document.querySelector('.kcal');
+    const proteinElement = document.querySelector('.protein');
+    const fatsElement = document.querySelector('.fats');
+    const carbsElement = document.querySelector('.carbs');
+    const circleElement = document.querySelector('.circle');
+
+    const proteinInput = document.getElementById('proteinInput');
+    const fatsInput = document.getElementById('fatsInput');
+    const carbsInput = document.getElementById('carbsInput');
+
+    function updateChart(protein, fats, carbs) {
+        const totalKcal = (protein * 4) + (fats * 9) + (carbs * 4);
+        
+        kcalElement.textContent = `${totalKcal} ккал`;
+        proteinElement.textContent = `${protein} г білки`;
+        fatsElement.textContent = `${fats} г жири`;
+        carbsElement.textContent = `${carbs} г вуглеводи`;
+
+        const total = protein + fats + carbs;
+        const proteinPercentage = (protein / total) * 100;
+        const fatsPercentage = (fats / total) * 100;
+        const carbsPercentage = (carbs / total) * 100;
+
+        circleElement.style.background = `conic-gradient(
+            #48A9F8 0% ${proteinPercentage}%, /* protein */
+            #FF8B3D ${proteinPercentage}% ${proteinPercentage + fatsPercentage}%, /* fats */
+            #33CC99 ${proteinPercentage + fatsPercentage}% 100% /* carbs */
+        )`;
+    }
+
+    function handleInputChange() {
+        const protein = parseFloat(proteinInput.value) || 0;
+        const fats = parseFloat(fatsInput.value) || 0;
+        const carbs = parseFloat(carbsInput.value) || 0;
+        
+        updateChart(protein, fats, carbs);
+    }
+
+    proteinInput.addEventListener('input', handleInputChange);
+    fatsInput.addEventListener('input', handleInputChange);
+    carbsInput.addEventListener('input', handleInputChange);
+
+    // Initial update
+    updateChart(20, 35, 41);
+});
+
+
 // -----------------------------------------------------------
 // Получаем элемент липкого меню
 // const stickyMenu = document.getElementById('stickyMenu');
