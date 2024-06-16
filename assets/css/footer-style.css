@@ -31,7 +31,7 @@
 
 .logo__link {
   display: block;
-  max-width: 90px;
+  max-width: 150px;
 }
 
 .footer-categories h4 {
@@ -76,6 +76,9 @@
   font-weight: 400;
   line-height: 16.94px;
   text-align: left;
+}
+.footer-contacts ul li:last-child {
+  margin-top: 23px;
 }
 
 .footer-contacts ul li .icon-font {
