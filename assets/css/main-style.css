@@ -614,4 +614,7 @@ body.lock {
     display: flex;
     width: 2000px;
   }
+  .entries_wrapp .entries .entry-card {
+    width: 260px;
+  }
 }/*# sourceMappingURL=main-style.css.map */

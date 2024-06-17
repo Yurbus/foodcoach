@@ -661,6 +661,9 @@ body.lock {
 		.entries {
 			display: flex;
 			width: 2000px;
+			.entry-card {
+				width: 260px;
+			}
 		}
 	}
 	
