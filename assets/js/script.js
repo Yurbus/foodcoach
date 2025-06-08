@@ -67,6 +67,7 @@ window.onscroll = function() {
 
 
 //---------------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', () => {
     const kcalElement = document.querySelector('.kcal');
     const proteinElement = document.querySelector('.protein');
@@ -78,9 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const fatsInput = document.getElementById('fatsInput');
     const carbsInput = document.getElementById('carbsInput');
 
+    const pr = document.getElementById('pr');
+    const ft = document.getElementById('ft');
+    const cr = document.getElementById('cr');
+
     function updateChart(protein, fats, carbs) {
         const totalKcal = (protein * 4) + (fats * 9) + (carbs * 4);
-        
+
         kcalElement.textContent = `${totalKcal} ккал`;
         proteinElement.textContent = `${protein} г білки`;
         fatsElement.textContent = `${fats} г жири`;
@@ -102,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const protein = parseFloat(proteinInput.value) || 0;
         const fats = parseFloat(fatsInput.value) || 0;
         const carbs = parseFloat(carbsInput.value) || 0;
-        
+
         updateChart(protein, fats, carbs);
     }
 
@@ -110,9 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fatsInput.addEventListener('input', handleInputChange);
     carbsInput.addEventListener('input', handleInputChange);
 
-    // Initial update
-    updateChart(20, 35, 41);
+    // Получение данных из HTML-элементов pr, ft, cr
+    const initialProtein = parseFloat(pr.textContent) || 0;
+    const initialFats = parseFloat(ft.textContent) || 0;
+    const initialCarbs = parseFloat(cr.textContent) || 0;
+
+    updateChart(initialProtein, initialFats, initialCarbs);
 });
+
 
 
 // -----------------------------------------------------------

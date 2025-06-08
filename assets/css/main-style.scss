@@ -57,6 +57,9 @@ body._lock {
 }
 body.lock {
 	overflow: hidden;
+	.header {
+		padding-right: 15px;
+	}
 }
 
 .wrapper {
@@ -200,6 +203,20 @@ body.lock {
 		color: #a9b2be;
 	}
 }
+.coock-props .icon {
+  fill: #A9B2BE; /* серый по умолчанию */
+  transition: fill 0.3s ease;
+}
+/* Подсветка первого огонька */
+.coock-props.level-light .icon:nth-child(1),
+.coock-props.level-medium .icon:nth-child(-n+2),
+.coock-props.level-heavy .icon:nth-child(-n+3) {
+  fill: #4CAF50; /* зелёный */
+}
+
+
+
+
 .entry-title {
 	padding: 8px 10px;
 	font-weight: 700;
@@ -429,8 +446,16 @@ body.lock {
 .post {
 }
 .entry-content {
+	p {
+		line-height: 130%;
+    	font-weight: 400;
+	}
 }
 .wp-block-heading {
+	font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+	margin-bottom: 15px;
 }
 .post-navigation {
 }

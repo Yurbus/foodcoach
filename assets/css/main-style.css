@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --dark-color: #141414;
   --grey-color: #A9B2BE;
@@ -60,6 +61,9 @@ body._lock {
 
 body.lock {
   overflow: hidden;
+}
+body.lock .header {
+  padding-right: 15px;
 }
 
 .wrapper {
@@ -203,6 +207,18 @@ body.lock {
   font-weight: 500;
   font-size: 13px;
   color: #a9b2be;
+}
+
+.coock-props .icon {
+  fill: #A9B2BE; /* серый по умолчанию */
+  transition: fill 0.3s ease;
+}
+
+/* Подсветка первого огонька */
+.coock-props.level-light .icon:nth-child(1),
+.coock-props.level-medium .icon:nth-child(-n+2),
+.coock-props.level-heavy .icon:nth-child(-n+3) {
+  fill: #4CAF50; /* зелёный */
 }
 
 .entry-title {
@@ -410,6 +426,18 @@ body.lock {
   grid-template-columns: 1fr 346px;
   gap: 20px;
   padding-top: 30px;
+}
+
+.entry-content p {
+  line-height: 130%;
+  font-weight: 400;
+}
+
+.wp-block-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 15px;
 }
 
 .sidebar {
