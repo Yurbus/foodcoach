@@ -273,7 +273,7 @@ body.lock .header {
   transition: 0.2s ease-in-out;
 }
 .read-more__wrap .btn-read__more:hover {
-  background: #3c910d;
+  background: rgb(60.2459016393, 144.5901639344, 12.9098360656);
 }
 
 /*------------- Single post style -----------------------*/
