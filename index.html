@@ -32,20 +32,26 @@
                         <div class="header__menu">
                             <ul class="menu__list">
                                 <li class="menu__link"><a href="index.html">Головна</a> </li>
-                                <li class="menu__link">
-                                    <a href="">Рецепти </a>
-                                    <span class="submenu-toggle">&#9662;</span>
+                                <li class="menu__link has-submenu active">
+                                    <a href="recipes.html">Рецепти 
+                                        <span class="desk-arrow">
+                                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.574219 0.605957L5.07399 4.60596L9.57422 0.605957" stroke="black" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <button class="submenu-toggle" aria-label="Toggle submenu"><img src="assets/img/arrow_down.svg" alt=""></button>
                                     <ul class="menu__sub-list">
-                                        <li class="menu__sub-link"><a href="">Категоия 1/1</a></li>
-                                        <li class="menu__sub-link"><a href="">Категоия 2/2</a></li>
-                                        <li class="menu__sub-link"><a href="">Категоия 3/3</a></li>
-                                        <li class="menu__sub-link"><a href="">Категоия 4/4</a></li>
+                                        <li class="menu__sub-link"><a href="#">Сніданки</a></li>
+                                        <li class="menu__sub-link"><a href="#">Обіди</a></li>
+                                        <li class="menu__sub-link"><a href="#">Вечері</a></li>
+                                        <li class="menu__sub-link"><a href="#">Перекуси</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu__link"><a href="">Статі</a></li> 
-                                <li class="menu__link"><a id="#popup2" href="#popup2" class="popup-link" href="#">Зв’язок</a></li>
+                                <li class="menu__link"><a  href="#">Зв’язок</a></li>
                             </ul>
-
+                            <!-- id="#popup2" href="#popup2" class="popup-link" -->
                             <div class="header__button">
                                 <a id="#popup" href="#popup" class="popup-link searsh_popup">Пошук 
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -589,8 +595,8 @@
     <div id="popup" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <a href="#" class="popup__close close-popup"><img src="assets/img/close.svg" alt="icon"></a>
                 <form action="" class="form__search">
+                    <a href="#" class="popup__close close-popup"><img src="assets/img/close.svg" alt="icon"></a>
                     <div class="input__search">
                         <input type="text" id="filter" placeholder="Пошук..." />
                         <div class="search__button">

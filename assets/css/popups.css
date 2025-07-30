@@ -53,6 +53,6 @@
 .popup__close {
   font-size: 30px;
   position: absolute;
-  right: 20px;
+  right: 0;
   top: -100px;
 }

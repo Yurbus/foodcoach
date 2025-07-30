@@ -12,35 +12,29 @@
 	outline: none;
 	box-sizing: border-box;
 }
-
 a {
 	text-decoration: none;
 	color: var(--dark-color);
 }
-
 ul, ol {
 	padding: 0;
 }
 ul li, ol li {
 	list-style: none;
 }
-
 img {
 	width: 100%;
 	object-fit: cover;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-
 button {
 	border: none;
 	background: none;
 	cursor: pointer;
 }
-
 html,
 body {
 	background-color: var(--white-color);

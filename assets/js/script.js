@@ -37,28 +37,59 @@ if (iconMenu) {
 		menuBody.classList.toggle('_active');
 	});
 }
+
 // Sub menu open
 document.addEventListener('DOMContentLoaded', function () {
     const toggles = document.querySelectorAll('.submenu-toggle');
 
     toggles.forEach(toggle => {
         toggle.addEventListener('click', function (e) {
-            if (window.innerWidth < 960) {
-                const parent = this.closest('.menu__link');
-                parent.classList.toggle('active');
-            }
+            e.preventDefault();          // предотвратить переход по кнопке
+            e.stopPropagation();         // не даём событию всплыть
+
+            const parent = this.closest('.menu__link');
+
+            // Закрываем другие активные пункты
+            document.querySelectorAll('.menu__link.active').forEach(item => {
+                if (item !== parent) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Переключаем текущий пункт (открыть или закрыть)
+            parent.classList.toggle('active');
         });
     });
 
-    // Optional: Close submenu on resize to larger screens
-    window.addEventListener('resize', function () {
-        if (window.innerWidth >= 960) {
-            document.querySelectorAll('.menu__link.active').forEach(item => {
-                item.classList.remove('active');
-            });
-        }
+    // Клик вне меню — закрывает всё
+    document.addEventListener('click', function (e) {
+        document.querySelectorAll('.menu__link.active').forEach(item => {
+            item.classList.remove('active');
+        });
     });
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const toggles = document.querySelectorAll('.submenu-toggle');
+
+//     toggles.forEach(toggle => {
+//         toggle.addEventListener('click', function (e) {
+//             if (window.innerWidth < 960) {
+//                 const parent = this.closest('.menu__link');
+//                 parent.classList.toggle('active');
+//             }
+//         });
+//     });
+
+//     // Optional: Close submenu on resize to larger screens
+//     window.addEventListener('resize', function () {
+//         if (window.innerWidth >= 960) {
+//             document.querySelectorAll('.menu__link.active').forEach(item => {
+//                 item.classList.remove('active');
+//             });
+//         }
+//     });
+// });
 
 // -----------------------------------------------------------
 

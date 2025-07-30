@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------------------------------------------------------------------------------*/
 /*------------ Header style -------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -15,7 +16,6 @@
 
 .header {
   background: #ffffff;
-  border-bottom: 1px solid rgba(64, 76, 92, 0.4);
   padding: 10px 0;
   z-index: 10;
   position: fixed;
@@ -73,14 +73,8 @@
   color: var(--white-color);
   background: var(--green-color);
 }
-.header__menu .menu__link a svg path {
-  display: flex;
-  margin-left: 6px;
-}
-.header__menu .menu__link a:hover svg path {
-  stroke: var(--white-color);
-}
 
+/*-----------------------*/
 .submenu-toggle {
   display: none;
   cursor: pointer;
@@ -92,30 +86,71 @@
   top: 6px;
 }
 
-/*-----------------------*/
+/* Скрываем подменю по умолчанию */
 .menu__sub-list {
+  display: none;
   position: absolute;
-  overflow: hidden;
-  transform: scaleY(0);
-  opacity: 0;
-  top: 100%;
-  padding: 15px;
-  border-radius: 10px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  list-style: none;
+  padding: 10px;
+  border-radius: 15px;
+  z-index: 100;
+}
+
+/* Показываем подменю при наведении на десктопе */
+.has-submenu:hover .menu__sub-list {
+  display: block;
+}
+
+.has-submenu a {
+  position: relative;
+}
+.has-submenu a .desk-arrow svg {
+  margin-left: 5px;
+  width: 14px;
+  height: 10px;
   transition: all 0.3s ease 0s;
-  margin-top: -5px;
-  z-index: 10;
+}
+.has-submenu a:hover svg {
+  transform: rotate(180deg);
+}
+.has-submenu a:hover svg path {
+  stroke: var(--white-color);
 }
 
-.menu__link:hover .menu__sub-list,
-.menu__link.open .menu__sub-list {
-  overflow: visible;
-  opacity: 1;
-  transform: scaleY(1);
-  z-index: 10;
+/* Для мобильных и планшетов — стрелка кликабельна */
+@media (max-width: 960.98px) {
+  .menu__sub-list {
+    margin-top: 10px;
+  }
+  .submenu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+  }
+  .submenu-toggle img {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    width: 18px;
+    height: 14px;
+  }
+  .has-submenu a .desk-arrow {
+    display: none;
+  }
+  .menu__link.active > .menu__sub-list {
+    display: block;
+    position: relative;
+  }
+  .menu__link {
+    position: relative;
+  }
+  .menu__sub-list {
+    position: static;
+  }
 }
-
 /*-----------------------*/
 .wd-nav {
   margin: 0 44px;
@@ -183,6 +218,7 @@
   max-width: 460px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .input__search {
